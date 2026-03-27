@@ -65,14 +65,20 @@ const ProviderList = ({
   const [selectedProvider, setSelectedProvider] = useState<string | null>(null);
   const [rateType, setRateType] = useState<"floating" | "fixed">("floating");
 
-  // Filter quotes based on rate type
-  const filteredQuotes = quotes.filter((quote) => {
-    if (rateType === "floating") {
-      return quote.fixed === "False";
-    } else {
-      return quote.fixed === "True";
-    }
-  });
+  // Filter quotes based on rate type and move Changee to end
+  const filteredQuotes = quotes
+    .filter((quote) => {
+      if (rateType === "floating") {
+        return quote.fixed === "False";
+      } else {
+        return quote.fixed === "True";
+      }
+    })
+    .sort((a, b) => {
+      if (a.provider.toLowerCase() === "changee") return 1;
+      if (b.provider.toLowerCase() === "changee") return -1;
+      return 0;
+    });
 
   const getKYCColor = (rating: string) => {
     const colors: { [key: string]: string } = {

@@ -54,7 +54,6 @@ const partners = [
   { name: "VostoEmisio", url: "https://www.vostoemisio.com/", image: VostoEmisio },
   { name: "Alfacash", url: "https://www.alfa.cash/?rid=2f7ad3da", image: Alfacash },
   { name: "BitcoinVN", url: "https://bitcoinvn.io/?ref=83ddf2706956bd0e", image: BitcoinVN },
-  { name: "Changee", url: "http://changee.com?refId=648a081cd2ceb", image: Changee },
   { name: "ChangeHero", url: "https://changehero.io/?ref=7e04fa2247b04fb686e1d98468e4ddf0", image: Changehero },
   { name: "ChangeNow", url: "https://changenow.io/?link_id=5bcec5da8f2fb9", image: Changenow },
   { name: "CoinCraddle", url: "https://coincraddle.com?refId=643e06f609d16", image: CoinCraddle },
@@ -79,6 +78,7 @@ const partners = [
   { name: "WizardSwap", url: "http://wizardswap.io/?ref=3bc26300b7", image: WizardSwap },
   { name: "XChange", url: "https://xchange.me/?invite=TrocadorApp", image: XChange },
   { name: "XGram", url: "https://xgram.io?refId=67532220e5656", image: XGram },
+  { name: "Changee", url: "http://changee.com?refId=648a081cd2ceb", image: Changee },
 ];
 
 const Partners = () => {
